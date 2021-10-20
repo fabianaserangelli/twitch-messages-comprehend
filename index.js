@@ -6,7 +6,7 @@ var fs = require('fs');
 
 AWS.config.update({region: 'us-west-2'});
 s3 = new AWS.S3({apiVersion: '2006-03-01'});
-var uploadParams = {Bucket: 'bucket_donde_almacenaras_csv', Key: '', Body: ''};
+var uploadParams = {Bucket: 'bucket_donde_almacenaras_csv', Key: 'Key', Body: 'Body'};
 
 var dataCSV = [];
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
